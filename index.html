@@ -3,56 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/" defer></script>
     <title>Componentes PC</title>
 </head>
 <body>
+    <!-- CABECERA -->
+    <header>
+        <h1>DREAM PC</h1>
+        <div class="titles">
+            <h2>Components</h2>
+            <h2>Cart</h2>
+        </div>
+    </header>
+
+    <!-- ITEMS DE COMPRA Y CARRITO DE COMPRAS -->
     <main>
-        <header>
-            <h1>Dream PC</h1>
-            <div class="titles">
-                <h2>Components</h2>
-                <h2>Cart</h2>
-            </div>
-        </header>
         <section class="components">
             <div class="cards">
-                <div class="card1">
-                    <img src="img/i3-13100f-300x300.png" alt="Processor" height="150px">
-                    <h4>INTEL</h4>
-                    <p>Intel I3 10100F LGA1200 4.30hz</p>
-                    <h3>$ 107,99</h3>
+                <div class="card">
+                    <img src="img/i3-13100f-300x300.png" alt="Processor">
+                    <div class="description">
+                        <h3>INTEL</h3>
+                        <p>Intel I3 10100F LGA1200 4.30hz</p>
+                        <h2>$ 107,99</h2>
+                    </div>    
                 </div>
-                <div class="card2">
-                    <img src="img/Gabinet.png" alt="Gabinet" height="150px">
-                    <h4>NZXT</h4>
-                    <p>H5 Flow Compact mid-tower airflow case</p>
-                    <h3>$ 94,99</h3>
+                <div class="card">
+                    <img src="img/Gabinet.png" alt="Cabinet">
+                    <div class="description">
+                        <h3>NZXT</h3>
+                        <p>H5 Flow Compact mid-tower airflow case</p>
+                        <h2>$ 94,99</h2>
+                    </div>
                 </div>
-                <div class="card3">
-                    <img src="img/GPU.png" alt="Graphic card" height="150px">
-                    <h4>GIGABYTE</h4>
-                    <p>Radeon RX570 4GB Windforce 2x RGB</p>
-                    <h3>$ 259,99</h3>   
+                <div class="card">
+                    <img src="img/GPU.png" alt="Graphic card">
+                    <div class="description">
+                        <h3>GIGABYTE</h3>
+                        <p>Radeon RX570 4GB Windforce 2x RGB</p>
+                        <h2>$ 259,99</h2>   
+                    </div>
                 </div>
-                <div class="card4">
-                    <img src="img/Motherboard.png" alt="Motherboard" height="150px">
-                    <h4>ASUS</h4>
-                    <p>Motherboard Asus prime H510M-E LGA1200</p>
-                    <h3>$ 129,99</h3>
+                <div class="card">
+                    <img src="img/Fans.png" alt="Ram">
+                    <div class="description">
+                        <h3>COOLER MASTER</h3>
+                        <p>3 fans kit COOLER MASTER SICKLEFLOW 120 ARGB</p>
+                        <h2>$ 45,99</h2>
+                    </div>
                 </div>
-                <div class="card5">
-                    <img src="img/Power Supply.png.webp" alt="Power Supply" height="150px">
-                    <h4>GIGABYTE</h4>
-                    <p>Modular power supply 80 plus gold 850w</p>
-                    <h3>$ 129,99</h3>
+                <div class="card">
+                    <img src="img/Motherboard.png" alt="Motherboard">
+                    <div class="description">
+                        <h3>ASUS</h3>
+                        <p>Motherboard Asus prime H510M-E LGA1200</p>
+                        <h2>$ 129,99</h2>
+                    </div>
                 </div>
-                <div class="card6">
-                    <img src="img/Ram ddr4.webp" alt="Ram" height="100px">
-                    <h4>KINGSTON</h4>
-                    <p>Ram DDR4 3200 Mhz</p>
-                    <h3>$ 45,99</h3>
+                <div class="card">
+                    <img src="img/Power Supply.png" alt="Power Supply">
+                    <div class="description">
+                        <h3>GIGABYTE</h3>
+                        <p>Modular power supply 80 plus gold 850w</p>
+                        <h2>$ 129,99</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/Ram-2.png" alt="Ram" >
+                    <div class="description">
+                        <h3>CORSAIR</h3>
+                        <p>Ram DDR4 3200 Mhz 4GB X1 RGB</p>
+                        <h2>$ 45,99</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/M.2.jpg.png" alt="Ram">
+                    <div class="description">
+                        <h3>WESTERN DIGITAL</h3>
+                        <p>SSD M.2 WD BLUE SN550 500 GB 2400 Mb/S NVme</p>
+                        <h2>$ 87,99</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/Cooler cpu.png" alt="Ram">
+                    <div class="description">
+                        <h3>COOLER MASTER</h3>
+                        <p>Cpu Cooler Master Masterair MA610P 2x Fan ARGB </p>
+                        <h2>$ 98,99</h>
+                    </div>
                 </div>
             </div>
         </section>

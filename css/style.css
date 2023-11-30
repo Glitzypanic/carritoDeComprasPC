@@ -1,0 +1,100 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Styles */
+body {
+    background-color: #F2F2F2;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+header {
+    text-align: center;
+    background-color: aqua;
+    padding: 20px 180px 20px 180px;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+
+}
+
+section {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+
+/* Classes */
+.titles {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.titles, h1 {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 100px;
+    padding: 20px;
+
+}
+
+.card {
+    height: 455px;
+    width: 260px;
+    display: block;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+ 
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.description {
+    text-align: left;
+    padding-top: 20px;
+    line-height: 1.4;
+}
+
+.description p {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.description h2 {
+    color: blueviolet;
+}
+
+.card:hover {
+    background-color: aqua;
+}
+
+.cart {
+    background-color: aquamarine;
+}
+
+
