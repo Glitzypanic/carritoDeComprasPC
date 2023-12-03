@@ -8,91 +8,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/ecb60890af.js" crossorigin="anonymous" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/" defer></script>
+    
     <title>Componentes PC</title>
 </head>
 <body>
     <!-- CABECERA -->
     <header>
-        <h1>DREAM PC</h1>
-        <div class="titles">
-            <h2>Components</h2>
-            <h2>Cart</h2>
-        </div>
+        <h1>Dream Pc</h1>
     </header>
 
     <!-- ITEMS DE COMPRA Y CARRITO DE COMPRAS -->
     <main>
         <section class="components">
             <div class="cards">
-                <div class="card">
-                    <img src="img/i3-13100f-300x300.png" alt="Processor">
+                <div class="card" draggable="true">
+                    <img src="img/CPU.png" class="cardImg" alt="Processor">
                     <div class="description">
-                        <h3>INTEL</h3>
-                        <p>Intel I3 10100F LGA1200 4.30hz</p>
-                        <h2>$ 107,99</h2>
+                        <h3 id="brand">INTEL</h3>
+                        <p id="description">Intel I3 10100F LGA1200 4.30hz</p>
+                        <h2 id="price">$ 107,99</h2>
                     </div>    
                 </div>
-                <div class="card">
-                    <img src="img/Gabinet.png" alt="Cabinet">
+                <div class="card" draggable="true">
+                    <img src="img/Gabinet.png" class="cardImg" alt="Cabinet">
                     <div class="description">
                         <h3>NZXT</h3>
                         <p>H5 Flow Compact mid-tower airflow case</p>
                         <h2>$ 94,99</h2>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/GPU.png" alt="Graphic card">
+                <div class="card" draggable="true">
+                    <img src="img/GPU.png" class="cardImg" alt="Graphic card">
                     <div class="description">
                         <h3>GIGABYTE</h3>
                         <p>Radeon RX570 4GB Windforce 2x RGB</p>
                         <h2>$ 259,99</h2>   
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/Fans.png" alt="Ram">
+                <div class="card" draggable="true">
+                    <img src="img/Fans.png" class="cardImg" alt="Ram">
                     <div class="description">
                         <h3>COOLER MASTER</h3>
                         <p>3 fans kit COOLER MASTER SICKLEFLOW 120 ARGB</p>
                         <h2>$ 45,99</h2>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/Motherboard.png" alt="Motherboard">
+                <div class="card" draggable="true">
+                    <img src="img/Motherboard.png" class="cardImg" alt="Motherboard">
                     <div class="description">
                         <h3>ASUS</h3>
                         <p>Motherboard Asus prime H510M-E LGA1200</p>
                         <h2>$ 129,99</h2>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/Power Supply.png" alt="Power Supply">
+                <div class="card" draggable="true"> 
+                    <img src="img/Power Supply.png" class="cardImg" alt="Power Supply">
                     <div class="description">
                         <h3>GIGABYTE</h3>
                         <p>Modular power supply 80 plus gold 850w</p>
                         <h2>$ 129,99</h2>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/Ram-2.png" alt="Ram" >
+                <div class="card" draggable="true">
+                    <img src="img/Ram-2.png" class="cardImg" alt="Ram">
                     <div class="description">
                         <h3>CORSAIR</h3>
                         <p>Ram DDR4 3200 Mhz 4GB X1 RGB</p>
                         <h2>$ 45,99</h2>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/M.2.jpg.png" alt="Ram">
+                <div class="card" draggable="true">
+                    <img src="img/M.2.jpg.png" class="cardImg" alt="Ram">
                     <div class="description">
                         <h3>WESTERN DIGITAL</h3>
                         <p>SSD M.2 WD BLUE SN550 500 GB 2400 Mb/S NVme</p>
                         <h2>$ 87,99</h2>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/Cooler cpu.png" alt="Ram">
+                <div class="card" draggable="true">
+                    <img src="img/Cooler cpu.png" class="cardImg" alt="Ram">
                     <div class="description">
                         <h3>COOLER MASTER</h3>
                         <p>Cpu Cooler Master Masterair MA610P 2x Fan ARGB </p>
@@ -101,16 +98,17 @@
                 </div>
             </div>
         </section>
-        <aside class="cart">
-            <h2>My Cart</h2>
-            <div id="items">
-
+        <aside class="cartCheckout">
+            <div id="itemList" ondragover="event.preventDefault()" ondrop="drop(event)">
+                <label>My Cart:</label>
+                <div id="itemsContainer"></div>
             </div>
             <div class="checkout">
                 <h3>Total: </h3>
-                <h3 id="total"></h3>
+                <h3 id="total">$98,99</h3>
             </div>
         </aside>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
