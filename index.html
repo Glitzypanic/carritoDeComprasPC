@@ -24,10 +24,10 @@
     <main>
         <section class="components">
             <div class="cards">
-                <div class="card" draggable="true">
+                <div class="card" id="cardDrag" draggable="true" >  
                     <img src="img/CPU.png" class="cardImg" alt="Processor">
                     <div class="description">
-                        <h3 id="brand">INTEL</h3>
+                        <h3>INTEL</h3>
                         <p id="description">Intel I3 10100F LGA1200 4.30hz</p>
                         <h2 id="price">$ 107,99</h2>
                     </div>    
@@ -99,9 +99,11 @@
             </div>
         </section>
         <aside class="cartCheckout">
-            <div id="itemList" ondragover="event.preventDefault()" ondrop="drop(event)">
+            <div id="itemList">
                 <label>My Cart:</label>
-                <div id="itemsContainer"></div>
+                <div id="itemsContainer">
+                    
+                </div>
             </div>
             <div class="checkout">
                 <h3>Total: </h3>
